@@ -1,0 +1,30 @@
+##Atlantic Hagfish (Myxine glutinosa) transcripts provided by Dr. David Plachetzki and Plachetzki Lab
+##path to transcripts: /mnt/lustre/plachetzki/shared/Lindy_hagfish/reads
+
+##Step 1. Assemble transcriptome using Trinity.
+
+##Forward reads from 3 samples (barbel [MGB1_1.fq.gz]; slime gland [MGSG1_1.fq.gz]; skin [MGSK1_1.fq.gz]) were combined into one file
+cat MGB1_1.fq.gz MGSG1_1.fq.gz MGSK1_1.fq.gz > MG_R1.fq.gz
+
+##Same was done to reverse reads (barbel [MGB1_2.fq.gz]; slime gland [MGSG1_2.fq.gz]; skin [MGSK1_2.fq.gz])
+cat MGB1_2.fq.gz MGSG1_2.fq.gz MGSK1_2.fq.gz > MG_R2.fq.gz
+
+##Transcriptome was assembled with Trinity, using concatenated forward and reverse read files as input
+sbatch 2_trinity.slurm
+
+##Step 2. Map reads onto transcriptome.
+
+##Made a new directory for mapping
+mkdir mapping
+
+##copy transcriptome [Trinity.fasta] into mapping directory
+cp Trinity.fasta ./mapping
+
+##change headers of transcripts in transcriptome
+./3.A_rename_fa_headers.py -a Trinity.fasta -b MG_
+
+##rename transcriptome to [MG_Trin.fasta]
+cp Trinity.fasta-mod.fa MG_Trin.fasta
+
+##map reads onto transcriptome
+sbatch salmon.slurm
