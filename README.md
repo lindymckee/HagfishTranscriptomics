@@ -9,6 +9,6 @@ Step 1: Assemble transcriptome Transcriptome was assembled using Trinity. Forwar
 
 Step 2: Map reads to transcriptome Paired-end reads from 4 barbel samples, 3 skin samples, and 3 slime gland samples will be mapped onto the transcriptome using Salmon.
 
-Step 3: Measure gene expression based on read coverage TBD
+Step 3: Measure gene expression based on read coverage. Download mapping directory and upload to R. Analyze differential gene expression using EdgeR.
 
 Step 4: Identify the genes that are differentially expressed BLAST search of nucleotide sequences identified in step 3
