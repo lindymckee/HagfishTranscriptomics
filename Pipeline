@@ -28,3 +28,7 @@ cp Trinity.fasta-mod.fa MG_Trin.fasta
 
 ##map reads onto transcriptome
 sbatch salmon.slurm
+
+##download mapping directory onto laptop and upload to R
+##carry out the rest of the analysis by running EdgeRScript in RStudio
+##then BLAST search results from EdgeRScript
