@@ -25,13 +25,13 @@ Additional genes upregulated in slime glands in comparison to only skin cells in
 C-type lectin-domain containing proteins, which bind calcium and carbohydrates [~45% identity]
 Fibrillar collagen NC1 domain-containing protein and collagen alpha-1(II) chain throughout from samples across phylum Chordata [~65% identity]
 
-![plot](BarPlot.jpg)
+![plot](MDSPlot.jpg)
 Figure 1. Multidimensional scaling plot (MDS) which shows clear and separate spatial grouping for the expression profiles of each tissue type. This plot was created with EdgeR using the salmon.slurm output.
 
-
+![plot](BarPlot.jpg)
 Figure 2. Bar plot representing the number of differentially expressed transcripts in pairwise comparisons between tissues. Comparison of barbel and slime gland tissue has the greatest number of differentially expressed transcripts, while both barbel and slime gland tissues each had fewer differences in gene expression when either were compared to skin tissues. This plot was created with EdgeR using the salmon.slurm output.
 
-
+![plot](DGE_exact_test_alltissuetypes.png)
 Figure 3. Differential gene expression (DGE) exact tests between pairs of samples represent how expression of individual transcripts differ between tissues. Each point represents a different transcript, with differentiation increasing as distance from zero increases. Transcripts in red are differentially expressed in one tissue while those in black have a negligible difference of expression between tissues. This plot was created with EdgeR using the salmon.slurm output. A) Transcripts upregulated in skin have positive logFC values while those upregulated in slime glands have negative logFC values. B) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in skin tissue have negative logFC values. A) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in slime glands have negative logFC values.
 
 ## Works cited
