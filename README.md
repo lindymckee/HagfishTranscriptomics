@@ -25,7 +25,7 @@ Additional genes upregulated in slime glands in comparison to only skin cells in
 C-type lectin-domain containing proteins, which bind calcium and carbohydrates [~45% identity]
 Fibrillar collagen NC1 domain-containing protein and collagen alpha-1(II) chain throughout from samples across phylum Chordata [~65% identity]
 
-
+![plot](BarPlot.jpg)
 Figure 1. Multidimensional scaling plot (MDS) which shows clear and separate spatial grouping for the expression profiles of each tissue type. This plot was created with EdgeR using the salmon.slurm output.
 
 
