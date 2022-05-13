@@ -6,9 +6,9 @@ Slime glands are hypothesized to have evolved from skin (Fudge and Schorno, 2016
  
 ## Methods
 
-We obtained *M. glutinosa* paired-end RNA sequences in fastq format from Dr. David Plachetzki and the Plachetzki lab, as a part of unpublished data from 2019. These included four barbel samples, three skin samples, and three slime gland samples. All scripts (2_trinity.slurm, 3.A_rename_fa_headers.py, salmon.slurm, EdgeRScript) were also provided by Dr. David Plachetzki, and we edited them to work with the provided samples.
-We first assembled a transcriptome with Trinity (2_trinity.slurm). Forward reads were concatenated to one file from forward reads from one skin, slime gland, and barbel sample each. We also concatenated backward reads from one of each sample. The headers within read files were renamed in preparation for mapping (3.A_rename_fa_headers.py). We then mapped all reads to the transcriptome using Salmon (salmon.slurm). These steps were performed on our laptops using the UNH Premise servers.
-Next, we uploaded the output from salmon to RStudio to analyze gene expression (EdgeRScript). Our analysis in EdgeR included a multidimensional scaling plot (MDS), a count of differentially expressed transcripts, and pairwise comparisons of transcript expression among the three tissues. 
+We obtained *M. glutinosa* paired-end RNA sequences in fastq format from Dr. David Plachetzki and the Plachetzki lab, as a part of unpublished data from 2019. These included four barbel samples, three skin samples, and three slime gland samples. All scripts (**2_trinity.slurm, 3.A_rename_fa_headers.py, salmon.slurm, EdgeRScript**) were also provided by Dr. David Plachetzki, and we edited them to work with the provided samples.
+We first assembled a transcriptome with Trinity (**2_trinity.slurm**). Forward reads were concatenated to one file from forward reads from one skin, slime gland, and barbel sample each. We also concatenated backward reads from one of each sample. The headers within read files were renamed in preparation for mapping (**3.A_rename_fa_headers.py**). We then mapped all reads to the transcriptome using Salmon (**salmon.slurm**). These steps were performed on our laptops using the UNH Premise servers.
+Next, we uploaded the output from salmon to RStudio to analyze gene expression (**EdgeRScript**). Our analysis in EdgeR included a multidimensional scaling plot (MDS), a count of differentially expressed transcripts, and pairwise comparisons of transcript expression among the three tissues. 
 Finally, we identified the genes most differentially expressed between tissues from the pairwise comparisons and used BLAST search of nucleotide sequences to identify homologous sequences.
 Throughout our analysis, we mainly had compatibility issues between the provided RScript and older versions of R. This was only able to be solved by using a different laptop that had the most updated version of R already installed on it.
  
@@ -24,9 +24,9 @@ The results of the  DGE exact test showed several differentially expressed genes
    
    - Endosome regulatory proteins used in biofilament assembly [~50% identity]
    
-      - Rab-GAP TBC domain-containing protein (Esox lucius)
+      - Rab-GAP TBC domain-containing protein in *Esox lucius*
       
-      - ALMS_motif domain-containing protein (Monodelphis domestica)
+      - ALMS_motif domain-containing protein in *Monodelphis domestica*
       
 Additional genes upregulated in slime glands in comparison to only skin cells include:
 
@@ -45,6 +45,9 @@ Figure 2. Bar plot representing the number of differentially expressed transcrip
 ![plot](DGE_exact_test_alltissuetypes.png)
 
 Figure 3. Differential gene expression (DGE) exact tests between pairs of samples represent how expression of individual transcripts differ between tissues. Each point represents a different transcript, with differentiation increasing as distance from zero increases. Transcripts in red are differentially expressed in one tissue while those in black have a negligible difference of expression between tissues. This plot was created with EdgeR using the salmon.slurm output. A) Transcripts upregulated in skin have positive logFC values while those upregulated in slime glands have negative logFC values. B) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in skin tissue have negative logFC values. A) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in slime glands have negative logFC values.
+
+## Acknowledgements
+We would like to acknowledge and thank Dr. David Plachetzki and the Plachetzki lab, UNH, for providing raw data, scripts to edit, and guidance throughout the completion of this project.
 
 ## Works cited
 Miyashita, T., Coates, M.I., Farrar R., and Currie, P.J. 2019. Hagfish from the Cretaceous Tethys Sea and a reconciliation of the morphological–molecular conflict in early vertebrate phylogeny. PNAS. 116(6): 2146-2151. 
