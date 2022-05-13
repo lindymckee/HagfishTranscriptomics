@@ -47,7 +47,7 @@ Figure 2. Bar plot representing the number of differentially expressed transcrip
 Figure 3. Differential gene expression (DGE) exact tests between pairs of samples represent how expression of individual transcripts differ between tissues. Each point represents a different transcript, with differentiation increasing as distance from zero increases. Transcripts in red are differentially expressed in one tissue while those in black have a negligible difference of expression between tissues. This plot was created with EdgeR using the salmon.slurm output. A) Transcripts upregulated in skin have positive logFC values while those upregulated in slime glands have negative logFC values. B) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in skin tissue have negative logFC values. A) Transcripts upregulated in barbel tissue have positive logFC values while those upregulated in slime glands have negative logFC values.
 
 ## Acknowledgements
-We would like to acknowledge and thank Dr. David Plachetzki and the Plachetzki lab, UNH, for providing raw data, scripts to edit, and guidance throughout the completion of this project.
+We would like to acknowledge and thank Dr. David Plachetzki and the Plachetzki lab, UNH, for providing raw data, scripts to edit, a computer with an updated version of RStudio, and guidance throughout the completion of this project.
 
 ## Works cited
 Miyashita, T., Coates, M.I., Farrar R., and Currie, P.J. 2019. Hagfish from the Cretaceous Tethys Sea and a reconciliation of the morphological–molecular conflict in early vertebrate phylogeny. PNAS. 116(6): 2146-2151. 
