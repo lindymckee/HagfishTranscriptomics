@@ -1,5 +1,5 @@
 # Hagfish Transcriptomics
-
+### Lindy Mckee and Stephen Mrenna
 ## Introduction
 
 Hagfish (Class Myxini) are the outgroup to all vertebrates. Because of their position on the metazoan tree, hagfish genomes are useful for comparative studies of vertebrate evolution. The first known fossil hagfishes are about 500 million years old (Miyashita *et al*., 2019). However, the oldest fossil hagfishes lack slime glands–a structure found in modern hagfishes. Slime glands are a novel structure for predator defense through which slime gets excreted and clogs the gills of predators. Slime glands are a relatively recent adaptation, first appearing in the fossil record about 100 mya (Miyashita *et al*., 2019). 
