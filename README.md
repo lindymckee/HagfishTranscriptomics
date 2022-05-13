@@ -22,7 +22,7 @@ The results of the  DGE exact test showed several differentially expressed genes
    
    - Protein S100 across subphylum Vertebrata [~50% identity]
    
-   - Endosome regulatory proteins used in biofilament assembly [~50%]
+   - Endosome regulatory proteins used in biofilament assembly [~50% identity]
    
       - Rab-GAP TBC domain-containing protein (Esox lucius)
       
