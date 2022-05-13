@@ -16,23 +16,23 @@ Throughout our analysis, we mainly had compatibility issues between the provided
 The profiles of transcript expression among our samples are similar within samples and are different between samples (Figure 1), which confirms their relevance for our project. The greater similarity of expression of barbel tissue and slime glands when either are compared to skin than when compared to each other might suggest that both these tissues diverged from skin cells (Figure 2). This is supported by Fudge and Schorno (2016), which hypothesized that slime glands evolved from skin tissue.
 The results of the  DGE exact test showed several differentially expressed genes (Figure 3). After conducting BLAST searches of the nucleotide sequences, we identified six transcripts upregulated in slime glands that share homology with sequences in the BLAST database. Genes differentially expressed in slime glands in comparison to both skin and barbel tissue include: 
 
-   -Annexin and Annexin 1 proteins from samples across phylum Chordata [~45% identity]
+   - Annexin and Annexin 1 proteins from samples across phylum Chordata [~45% identity]
    
-   -Thread biopolymer filament subunit alpha in *Eptatretus stoutii* (Pacific hagfish) [~47% identity]
+   - Thread biopolymer filament subunit alpha in *Eptatretus stoutii* (Pacific hagfish) [~47% identity]
    
-   -Protein S100 across subphylum Vertebrata [~50% identity]
+   - Protein S100 across subphylum Vertebrata [~50% identity]
    
-   -Endosome regulatory proteins used in biofilament assembly [~50%]
+   - Endosome regulatory proteins used in biofilament assembly [~50%]
    
-      -Rab-GAP TBC domain-containing protein (Esox lucius)
+      - Rab-GAP TBC domain-containing protein (Esox lucius)
       
-      -ALMS_motif domain-containing protein (Monodelphis domestica)
+      - ALMS_motif domain-containing protein (Monodelphis domestica)
       
 Additional genes upregulated in slime glands in comparison to only skin cells include:
 
-   -C-type lectin-domain containing proteins, which bind calcium and carbohydrates [~45% identity]
+   - C-type lectin-domain containing proteins, which bind calcium and carbohydrates [~45% identity]
    
-   -Fibrillar collagen NC1 domain-containing protein and collagen alpha-1(II) chain throughout from samples across phylum Chordata [~65% identity]
+   - Fibrillar collagen NC1 domain-containing protein and collagen alpha-1(II) chain throughout from samples across phylum Chordata [~65% identity]
 
 ![plot](MDSPlot.jpg)
 
